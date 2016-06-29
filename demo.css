@@ -1,0 +1,183 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.jarallax {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: 1;
+        min-height: 600px;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: #fff;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #272333;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+small {
+    font-size: 75%;
+    color: #eee;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus {
+    color: inherit;
+}
+
+a:hover,
+a:focus {
+    color: #ddd;
+}
+/*====added background-size poosition to cover backi*/
+.jarallax {
+
+}
+
+.demo-table {
+    display: table;
+    width: 100%;
+    height: 700px;
+    background-color: rgba(39, 35, 51, 0.8);
+}
+
+.demo-table-cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.demo-gap {
+    padding: 50px;
+}
+
+.demo-gap h1,
+.demo-gap h2,
+.demo-gap h3 {
+    text-align: center;
+}
+
+.demo-gap .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.demo-gap-half {
+    display: table;
+    width: 100%;
+}
+
+.demo-gap-half>div {
+    display: table-cell;
+    width: 50%;
+}
+
+.demo-gap-half .demo-gap-1 .jarallax,
+.demo-gap-half .demo-gap-2 .jarallax {
+    padding-top: 56.25%;
+    min-height: auto;
+    height: 0;
+}
+
+.demo-gap-half .demo-gap-1 .jarallax {
+    padding-top: 112.5%;
+}
+
+.demo-full-height,
+.demo-full-height .demo-table {
+    height: 96vh;
+    min-height: 600px;
+}
+
+/*========Jumbotron=========*/
+/*Added margin top on my own*/
+.jumbotron {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eee;
+}
+.jumbotron h1,
+.jumbotron .h1 {
+  color: inherit;
+}
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.jumbotron > hr {
+  border-top-color: #d5d5d5;
+}
+.row .jumbotron,
+.container-fluid .jumbotron {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 6px;
+}
+.jumbotron .row{
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+        margin-top: 100px;
+  }
+  .row .jumbotron,
+  .container-fluid .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .jumbotron h1,
+  .jumbotron .h1 {
+    font-size: 63px;
+  }
+}
+
+/*=====Game plan=======*/
+
+.game{
+    display:inline-block;
+    transform: skew(50deg);
+    transform: rotateZ(45deg);
+    background: red;
+    padding: 50px;
+    margin: 20px
+}
+.game h1{
+    display: none;
+    padding: 20px;
+    transform: skew(-50deg);
+    transform: rotateZ(-45deg);
+    background-color: antiquewhite;
+}
+
+
+
