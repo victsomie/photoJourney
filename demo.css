@@ -17,8 +17,9 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', 'Open Sans', sans-serif;
     margin: 0;
+    padding: 0;
     color: #fff;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -27,6 +28,7 @@ body {
 
 h1 {
     font-size: 50px;
+    font-family: 'Lato';
 }
 
 h2 {
@@ -54,6 +56,146 @@ a:hover,
 a:focus {
     color: #ddd;
 }
+
+.test {
+    background-color: purple;
+    width: 50px;
+    height: 50px;
+    border: 5px solid;
+}
+
+
+/*=========Menu here============*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+html,
+body {
+    min-height: 100%;
+    margin: 0;
+}
+
+.try {
+    min-height: 500px;
+    background-image: url(http://placekitten.com/1920/1000);
+    background-size: cover;
+    background-position: center center;
+}
+
+.try2 {
+    min-height: 500px;
+    background-image: url(http://www.gettyimages.pt/gi-resources/images/Homepage/Hero/PT/PT_hero_42_153645159.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+body {
+    font-family: "open sans", sans-serif;
+    background-image: url(http://placekitten.com/1920/1000);
+    background-size: cover;
+    background-position: center center;
+}
+
+.menu-trigger {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    color: white;
+    cursor: pointer;
+    z-index: 201;
+    font-size: 200%;
+}
+
+.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    perspective: 300px;
+    perspective-origin: 50% 50%;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 26px;
+}
+
+a:hover {
+    background: #E184BE;
+}
+
+[class*='slicon-'] {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+    > * {
+        position: absolute;
+        transition: 250ms ease all;
+        transform: scale(1);
+    }
+}
+
+.slicon-menu {
+    :nth-child(1) {
+        left: 0;
+        top: 20%;
+        border-bottom: 1px solid;
+        width: 100%;
+    }
+    :nth-child(2) {
+        left: 0;
+        top: 50%;
+        border-bottom: 1px solid;
+        width: 100%;
+    }
+    :nth-child(3) {
+        left: 0;
+        top: 80%;
+        border-bottom: 1px solid;
+        width: 100%;
+    }
+}
+
+.slicon-close {
+    :nth-child(1) {
+        left: 0;
+        top: 50%;
+        border-bottom: 1px solid;
+        width: 100%;
+        transform: rotate(45deg);
+        transform-origin: 50% 50%;
+    }
+    :nth-child(2) {
+        left: 0;
+        top: 50%;
+        border-bottom: 1px solid;
+        width: 100%;
+        transform: scale(0);
+    }
+    :nth-child(3) {
+        left: 0;
+        top: 50%;
+        border-bottom: 1px solid;
+        width: 100%;
+        transform: rotate(-45deg);
+        transform-origin: 50% 50%;
+    }
+}
+
+
+/*=========End Menu here============*/
 
 
 /*====added background-size poosition to cover backi*/
@@ -181,7 +323,7 @@ a:focus {
     transform: rotateZ(45deg);
     background: red;
     padding: 50px;
-    margin: 20px
+    margin: 20px;
 }
 
 .game h1 {
@@ -223,7 +365,7 @@ a:focus {
     overflow: hidden;
     margin: -0.135em;
     width: 100%;
-    height: 400px;
+    height: 300px;
     background: #3085a3;
     background: ;
     overflow: hidden;
@@ -270,7 +412,7 @@ a:focus {
 
 .grid figure a {
     z-index: 1000;
-    text-indent: 200%;
+    text-indent: 100%;
     white-space: nowrap;
     font-size: 0;
     opacity: 0;
@@ -352,9 +494,6 @@ figure.effect-lily:hover p {
     transition-duration: 0.35s;
 }
 
-
-/*---------------*/
-
 @media screen and (max-width: 69.5em) {
     .grid figure {
         width: 100%;
@@ -369,3 +508,6 @@ figure.effect-lily:hover p {
         width: 100%;
     }
 }
+
+
+/*-----Grid figure----------*/

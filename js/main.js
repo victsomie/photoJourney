@@ -1,38 +1,145 @@
-(function($) {
+(function ($) {
+    "use strict";
 
-    var game = $('.game'),
-        body = $('body'),
+    var test = $('.test'),
+        game = $('.game'),
+        try1 = $('.try'),
+        mytext = $('.mytext'),
         tl = new TimelineLite();
 
+
     tl
-        .fromTo(game, 3,
-              { backgroundColor: "red", scale: 1, transform: "skew(0deg)", x: 20, y: 200},
-              {autoAlpha: 1, backgroundColor: "blue", transform: "skew(100deg)", scale: 5.3, transform: "rotateZ(20deg)", ease: Power3.easeIn, delay: 0.05},
-                3
-             )
+        .fromTo(test, 2, {}, {
+            clip: "rect(0px 100px 100px 100 px)"
+        })
+        .fromTo(test, 2, {
+            x: 0
+        }, {
 
-        .fromTo(game, 3,
-                {autoAlpha: 1, backgroundColor: "blue", transform: "skew(100deg)", scale: 5.3},
-                {autoAlpha: 1,  backgroundColor: "brown", scale: 1, ease:Power3.easeIn},
-                6
+            x: 500,
+            border: 10,
+            borderColor: 'red'
+        })
+        .fromTo(test, 6, {}, {
+            transformOrigin: "right bottom",
+            rotation: 450
+        })
+        .fromTo(test, 6, {}, {
+            x: 50
+        })
+        .fromTo(test, 6, {}, {
+
+            x: 300,
+            rotationX: 360,
+            transformOrigin: "center",
+            ease: Power0.easeIn
+        })
+        .fromTo(test, 6, {
+            backgroundColor: "yellow",
+            ease: Power0.easeOut
+        }, {
+            x: 500,
+            y: 300,
+            backgroundColor: "green",
+            ease: Power3.easeIn
+        })
+        .fromTo(test, 6, {
+            backgroundColor: "purple",
+            ease: Power3.easeIn
+
+        }, {
+            scale: 5,
+            backgroundColor: "green",
+            ease: Power3.easeIn
+        })
+        .fromTo(test, 6, {
+            border: 3
+
+        }, {
+            margin: 10,
+            border: 10,
+            borderColor: "white",
+            scale: 8,
+            backgroundColor: "green",
+            ease: Power3.easeIn
+        })
+        .fromTo(test, 6, {
+            backgroundColor: "yellow"
+        }, {
+            x: 500,
+            y: 300,
+            backgroundColor: "green",
+            rotationY: 360,
+            transformOrigin: "center",
+            ease: Power3.easeIn
+        })
+        .fromTo(game, 3, {
+                backgroundColor: "red",
+                scale: 1,
+                transform: "skew(0deg)",
+                x: 20,
+                y: 200,
+                ease: Power3.easeIn
+            }, {
+                autoAlpha: 1,
+                backgroundColor: "blue",
+                transform: "skew(100deg)",
+                scale: 5.3,
+                transform: "rotateZ(20deg)",
+                ease: Power3.easeIn,
+                delay: 0.05
+            }
+
         )
-        .fromTo(game, 3,
-              { autoAlpha: 1,  backgroundColor: "brown", scale: 1},
-              {autoAlpha: 1, backgroundColor: "blue", transform: "rotateZ(-45deg)", scale: 4, ease:Power1.easeNone},
-                9
-             )
-        .fromTo(game, 3,
-                {autoAlpha: 1, backgroundColor: "blue", transform: "rotateZ(-45deg)", scale: 4},
-                {autoAlpha: 1, backgroundColor: "purple", transform: "rotateZ(45deg)", scale: 2, ease:Power1.easeNone},
-                12
-               )
-        .fromTo(game, 3,
-                {autoAlpha: 1, backgroundColor: "purple", transform: "rotateZ(45deg)", scale: 2},
-                {autoAlpha: 1, backgroundColor: "gray", transform: "rotateZ(-90deg)", scale: 4, ease:Power1.easeNone},
-                15
-               ) ;
 
-//        .to(game, 2, {opacity: 0});
+    .fromTo(game, 3, {
+            autoAlpha: 1,
+            backgroundColor: "blue",
+            transform: "skew(100deg)",
+            scale: 5.3
+        }, {
+            autoAlpha: 1,
+            backgroundColor: "brown",
+            scale: 1,
+            ease: Power3.easeIn
+        })
+        .fromTo(game, 3, {
+            autoAlpha: 1,
+            backgroundColor: "brown",
+            scale: 1
+        }, {
+            autoAlpha: 1,
+            backgroundColor: "blue",
+            transform: "rotateZ(-45deg)",
+            scale: 4,
+            ease: Power1.easeNone
+        })
+        .fromTo(game, 3, {
+            autoAlpha: 1,
+            backgroundColor: "blue",
+            transform: "rotateZ(-45deg)",
+            scale: 4
+        }, {
+            autoAlpha: 1,
+            backgroundColor: "purple",
+            transform: "rotateZ(45deg)",
+            scale: 2,
+            ease: Power1.easeNone
+        })
+        .fromTo(game, 3, {
+            autoAlpha: 1,
+            backgroundColor: "purple",
+            transform: "rotateZ(45deg)",
+            scale: 2
+        }, {
+            autoAlpha: 1,
+            backgroundColor: "gray",
+            transform: "rotateZ(-90deg)",
+            scale: 4,
+            ease: Power1.easeNone
+        });
+
+    //        .to(game, 2, {opacity: 0});
 
     /*
         dot = $('.dot'),

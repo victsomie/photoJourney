@@ -7,72 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jarallax | JavaScript parallax scrolling with NO dependencies</title>
     <meta name="description" content="Pure JavaScript parallax scrolling effect. jQuery supported. Youtube and Vimeo parallax supported.">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
     <link href='demo.css' rel='stylesheet' type='text/css'>
     <link href='/Foundation/css/foundation.min.css' rel='stylesheet' type='text/css'>
     <link href='/css/font-awesome.min.css' type='text/css'>
+    <style>
+        html {
+            margin: 0;
+            background-color: gray;
+        }
+
+        body {
+            background-color: ;
+        }
+    </style>
+
 </head>
 
 <body>
 
-    <div class="jarallax" data-jarallax-video="https://vimeo.com/110138539">
-
-        This is my story
-
-    </div>
-    <div class="row expanded jarallax" data-jarallax='{"speed": -2, "type": "scroll"}' style="background-image: url(img/road.jpgs);">
-        <!--=======Create the entry animation here========-->
-        <div class="top-game jumbotron text-center">
-            <div class="game">
-                <h1>Tech</h1></div>
-            <div class="game">
-                <h1>Design</h1></div>
-            <div class="game">
-                <h1>Momentum</h1></div>
-            <div class="game">
-                <h1>Momentum</h1></div>
-            <div class="game">
-                <h1>Momentum</h1></div>
-            <div class="game">
-                <h1>Momentum</h1></div>
-            <div class="game">
-                <h1>Momentum</h1></div>
-            <div class="game">
-                <h1>Momentum</h1></div>
-            <div class="game">
-                <h1>Momentum</h1></div>
-            <div class="game">
-                <h1>Momentum</h1></div>
-            <div class="game">
-                <h1>Momentum</h1></div>
-            <div class="game">
-                <h1>Momentum</h1></div>
-            <div class="game">
-                <h1>Momentum</h1></div>
-            <div class="game">
-                <h1>Momentum</h1></div>
-            <div class="game">
-                <h1>Momentum</h1></div>
-            <div class="game">
-                <h1>Momentum</h1></div>
-            <div class="game">
-                <h1>Momentum</h1></div>
-            <div class="game">
-                <h1>Momentum</h1></div>
-            <div class="game">
-                <h1>Momentum</h1></div>
-            <div class="game">
-                <h1>Momentum</h1></div>
-        </div>
-
-    </div>
-
-
 
     <!--====Begin top part here-->
     <div class="row expanded jarallax" data-jarallax='{"speed": -1, "type": "scroll"}' style="background-image: url(img/bgcool.gif);">
-        <div class="small-12 medium-2 large-4 column">This is victor's design</div>
-        <div class="small-12 medium-10 large-8 column expanded">
-            <div class="row text-right">
+        <!--        <div class="small-12 medium-2 large-4 column">This is victor's design</div>-->
+        <div class="small-12 medium-10 large-12 column expanded">
+            <div class="row text-left">
                 <div class="jumbotron" style="background: transparent; color: white">
 
                     <h1>My name is <u>Victor</u></h1>
@@ -88,9 +50,81 @@
 
         </div>
     </div>
+    <!--====Begin second part here-->
+    <div class="row expanded jarallax" data-jarallax='{"speed": 0.5, "type": "scroll"}' style="background-image: url(img/seas.jpg);">
+        <div class="small-12 medium-12 large-12 column">
+            <div class="jumbotron" style="background: transparent">
+                <h1>This is part of what I love doing..</h1>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--====Portifolio=--->
+    <div class="row expanded">
+        <div class="text-center jumbotron">
+            <h1>Potifolio</h1>
+        </div>
+        <div class="row large-12">
+            <div class="column medium-12 large-10 large-centered">
+                <div class="row large-centered">
+                    <div class="column medium-6 large-4">
+                        <div class="grid">
+                            <!--First figure-->
+                            <figure class="effect-lily columnx">
+                                <img src="img/hori_zon.jpg" alt="img01" />
+                                <figcaption>
+                                    <h2>Yusudi <span>Redone</span></h2>
+                                    <p>Lily likes to play with crayons and pencils</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- another column-->
+                    <div class="column medium-6 large-4">
+                        <div class="grid">
+                            <!--First figure-->
+                            <figure class="effect-lily columnx">
+                                <img src="img/hori_zon.jpg" alt="img01" />
+                                <figcaption>
+                                    <h2>Hakuna <span>Matata</span></h2>
+                                    <p>Lily likes to play with crayons and pencils</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- another column-->
+                    <div class="column medium-6 large-4">
+                        <div class="grid">
+                            <!--First figure-->
+                            <figure class="effect-lily columnx">
+                                <img src="img/hori_zon.jpg" alt="img01" />
+                                <figcaption>
+                                    <h2>Watoto <span>Kumi</span></h2>
+                                    <p>Lily likes to play with crayons and pencils</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- another column-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
 
     <!--====Begin second part here-->
-    <div class="row expanded ">
+    <!--
+    <div class="row expanded">
         <div class="small-12 medium-12 large-6 column"></div>
         <div class="small-12 medium-12 large-6 column expanded jarallax" data-jarallax='{"speed": 0.5, "type": "scroll"}' style="background-image: url(img/seas.jpg);">
             <div class="row text-left">
@@ -104,7 +138,7 @@
 
     <div class="row expanded ">
         <div class="small-12 medium-12 large-6 column"></div>
-        <div class="small-12 medium-12 large-6 column expanded jarallax" data-jarallax='{"speed": -0.5, "type": "scroll"}' style="background-image: url(img/seas.jpg);">
+        <div class="small-12 medium-12 large-6 column expanded jarallax" data-jarallax='{"speed": -1.5, "type": "scroll"}' style="background-image: url(img/seas.jpg);">
             <div class="row text-left">
                 <div class="jumbotron" style="background: transparent">
                     <h1>Amazing design</h1>
@@ -113,63 +147,12 @@
         </div>
     </div>
 
-    <!--====Portifolio=--->
-    <div class="row expanded">
-        <div class="row">
-            <link rel="stylesheet" href="">
-
-            <div class="column medium-6 large-4 expanded">
-                <div class="grid">
-                    <!--First figure-->
-                    <figure class="effect-lily columnx">
-                        <img src="https://github.com/victsomie/photoJourney/blob/gh-pages/img/horizon.jpg" alt="img01" />
-                        <figcaption>
-                            <h2>Yusudi <span>Redone</span></h2>
-                            <p>Lily likes to play with crayons and pencils</p>
-                            <a href="#">View more</a>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-            <!-- another column-->
-            <div class="column medium-6 large-4 expanded">
-                <div class="grid">
-                    <!--First figure-->
-                    <figure class="effect-lily columnx">
-                        <img src="img/horizon.jpg" alt="img01" />
-                        <figcaption>
-                            <h2>Hakuna <span>Matata</span></h2>
-                            <p>Lily likes to play with crayons and pencils</p>
-                            <a href="#">View more</a>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-            <!-- another column-->
-            <div class="column large-4 expanded">
-                <div class="grid">
-                    <!--First figure-->
-                    <figure class="effect-lily columnx">
-                        <img src="img/horizon.jpg" alt="img01" />
-                        <figcaption>
-                            <h2>Watoto <span>Kumi</span></h2>
-                            <p>Lily likes to play with crayons and pencils</p>
-                            <a href="#">View more</a>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-            <!-- another column-->
-
-
-        </div>
-    </div>
 
 
 
 
 
-    <div class="jarallax" data-jarallax='{"speed": -0.2, "type": "scale"}' style="background-image: url(img/horizon.jpg);">
+    <div class="jarallax" data-jarallax='{"speed": -2, "type": "scroll"}' style="background-image: url(img/hori_zon.jpg);">
         <h1>Test another</h1>
         <h1>Test another</h1>
         <h1>Test another</h1>
@@ -185,16 +168,61 @@
 -->
     <!--            <div class="jarallax" data-jarallax-video="https://vimeo.com/110138539"></div>-->
     <!--            <div class="jarallax" data-jarallax-video="https://vimeo.com/channels/staffpicks/151926492"></div>-->
+    <!--
     <div class="demo-gap">
         <h2>Parallax for small blocks</h2>
     </div>
+-->
+    <!---======Begin form here=====---->
+
+
+    <div class="row">
+        <div class="columns small-12 medium-8 large-6 small-centered large-centered">
+            <form action="https://formspree.io/victsomie@yahoo.com" method="POST">
+                <div class="medium-12 columns">
+                    <label>
+                        <h1>Your Name</h1>
+                        <input type="text" name="name" placeholder="What's your name">
+                    </label>
+                </div>
+                <div class="medium-12 columns">
+                    <label>
+                        <h1>E-mail</h1>
+                        <input type="text" name="email" placeholder="Let me know your mail">
+                    </label>
+                </div>
+
+                <div class="medium-12 columns">
+                    <label>
+                        <h1>Leave comments</h1>
+                        <textarea placeholder="Tell me something" name="comments" rows="3"></textarea>
+                    </label>
+
+                </div>
+
+                <input type="submit" value="Send" class="success button">
+
+                <button class="close-button" data-close aria-label="Close reveal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+            </form>
+        </div>
+    </div>
+
+
+    <!---====End form Here---->
+    <div class="row text-center">
+
+    </div>
+
 
 
     <div class="demo-gap">
-        <p>
-            Jarallax © 2016 _nK released under WTFPL license
+        <p class="text-center">
+            Copyright © 2016
         </p>
-        <small>All images taken from <a href="https://www.pexels.com/">https://www.pexels.com/</a></small>
+
     </div>
     <!--
     </div>
@@ -213,7 +241,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
 
 -->
-
     <script src="/GreenSockPlugins/jquery.2.1.3.min.js"></script>
     <!--
     <script>
@@ -229,6 +256,9 @@
     <script src="/GreenSockPlugins/CSSPlugin.min.js"></script>
 
 
+    <!--=======Menu js Resources-->
+    <script src="menu.js"></script>
+
     <script src="js/main.js"></script>
     <!----This is the one to modify---->
     <!----======End Tween resources===-->
@@ -237,9 +267,10 @@
 
 
 
+
     <!--Jarallax files here--->
     <script src="jarallax.js"></script>
-    <script src="jarallax-video.js"></script>
+    <!--    <script src="jarallax-video.js"></script>-->
     <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
     <script type="text/javascript">
         /* init Jarallax */
@@ -254,6 +285,8 @@
         //     imgHeight: 768
         // });
     </script>
+
+
 </body>
 
 </html>

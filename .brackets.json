@@ -1,5 +1,12 @@
 {
     "jscodehints.detectedExclusions": [
-        "/home/victor/repos/photoJourney/Foundation/js/vendor/foundation.js"
+        "/home/victor/repos/photoJourney/Foundation/js/vendor/foundation.js",
+        "/home/victor/repos/photoJourney/Foundation/js/vendor/what-input.js",
+        "/home/victor/repos/photoJourney/Foundation/js/vendor/foundation.min.js",
+        "/home/victor/repos/photoJourney/GreenSockPlugins/TimelineMax.min.js",
+        "/home/victor/repos/photoJourney/GreenSockPlugins/EasePack.min.js",
+        "/home/victor/repos/photoJourney/GreenSockPlugins/TweenLite.min.js",
+        "/home/victor/repos/photoJourney/GreenSockPlugins/TimelineLite.min.js",
+        "/home/victor/repos/photoJourney/js/main.js"
     ]
 }
