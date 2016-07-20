@@ -18,6 +18,7 @@
 
 body {
     font-family: 'Lato', 'Open Sans', sans-serif;
+    font-family: 'Poiret One';
     margin: 0;
     padding: 0;
     color: #fff;
@@ -26,23 +27,17 @@ body {
     background-color: #272333;
 }
 
+.section-space {
+    padding: 5% 0;
+}
+
 h1 {
     font-size: 50px;
-    font-family: 'Lato';
+    /*    font-family: 'Lato';*/
 }
 
 h2 {
     font-size: 30px;
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 5px;
-}
-
-small {
-    font-size: 75%;
-    color: #eee;
 }
 
 a,
@@ -57,70 +52,6 @@ a:focus {
     color: #ddd;
 }
 
-.test {
-    background-color: purple;
-    width: 50px;
-    height: 50px;
-    border: 5px solid;
-}
-
-
-/*=========Menu here============*/
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
-html,
-body {
-    min-height: 100%;
-    margin: 0;
-}
-
-.try {
-    min-height: 500px;
-    background-image: url(http://placekitten.com/1920/1000);
-    background-size: cover;
-    background-position: center center;
-}
-
-.try2 {
-    min-height: 500px;
-    background-image: url(http://www.gettyimages.pt/gi-resources/images/Homepage/Hero/PT/PT_hero_42_153645159.jpg);
-    background-size: cover;
-    background-position: center center;
-}
-
-body {
-    font-family: "open sans", sans-serif;
-    background-image: url(http://placekitten.com/1920/1000);
-    background-size: cover;
-    background-position: center center;
-}
-
-.menu-trigger {
-    position: fixed;
-    right: 10px;
-    top: 10px;
-    color: white;
-    cursor: pointer;
-    z-index: 201;
-    font-size: 200%;
-}
-
-.menu {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 200;
-    display: flex;
-    justify-content: center;
-    flex-flow: column wrap;
-    perspective: 300px;
-    perspective-origin: 50% 50%;
-    text-align: center;
-}
-
 a {
     color: white;
     text-decoration: none;
@@ -132,70 +63,6 @@ a {
 a:hover {
     background: #E184BE;
 }
-
-[class*='slicon-'] {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    position: relative;
-    > * {
-        position: absolute;
-        transition: 250ms ease all;
-        transform: scale(1);
-    }
-}
-
-.slicon-menu {
-    :nth-child(1) {
-        left: 0;
-        top: 20%;
-        border-bottom: 1px solid;
-        width: 100%;
-    }
-    :nth-child(2) {
-        left: 0;
-        top: 50%;
-        border-bottom: 1px solid;
-        width: 100%;
-    }
-    :nth-child(3) {
-        left: 0;
-        top: 80%;
-        border-bottom: 1px solid;
-        width: 100%;
-    }
-}
-
-.slicon-close {
-    :nth-child(1) {
-        left: 0;
-        top: 50%;
-        border-bottom: 1px solid;
-        width: 100%;
-        transform: rotate(45deg);
-        transform-origin: 50% 50%;
-    }
-    :nth-child(2) {
-        left: 0;
-        top: 50%;
-        border-bottom: 1px solid;
-        width: 100%;
-        transform: scale(0);
-    }
-    :nth-child(3) {
-        left: 0;
-        top: 50%;
-        border-bottom: 1px solid;
-        width: 100%;
-        transform: rotate(-45deg);
-        transform-origin: 50% 50%;
-    }
-}
-
-
-/*=========End Menu here============*/
 
 
 /*====added background-size poosition to cover backi*/
@@ -264,11 +131,10 @@ a:hover {
 /*Added margin top on my own*/
 
 .jumbotron {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 5% 0;
     margin-bottom: 30px;
     color: inherit;
-    background-color: #eee;
+    background-color: ;
 }
 
 .jumbotron h1,
@@ -283,14 +149,14 @@ a:hover {
 }
 
 .jumbotron > hr {
-    border-top-color: #d5d5d5;
+    border-top-color: ;
 }
 
 .row .jumbotron,
 .container-fluid .jumbotron {
     padding-right: 15px;
     padding-left: 15px;
-    border-radius: 6px;
+    border-radius: ;
 }
 
 .jumbotron .row {
@@ -312,26 +178,6 @@ a:hover {
     .jumbotron .h1 {
         font-size: 63px;
     }
-}
-
-
-/*=====Game plan=======*/
-
-.game {
-    display: inline-block;
-    transform: skew(50deg);
-    transform: rotateZ(45deg);
-    background: red;
-    padding: 50px;
-    margin: 20px;
-}
-
-.game h1 {
-    display: none;
-    padding: 20px;
-    transform: skew(-50deg);
-    transform: rotateZ(-45deg);
-    background-color: antiquewhite;
 }
 
 
@@ -511,3 +357,21 @@ figure.effect-lily:hover p {
 
 
 /*-----Grid figure----------*/
+
+
+/*====Portifolio*/
+
+#portfolio {
+    background-color: white;
+}
+
+#contact {
+    background-color: #716989;
+}
+
+
+/*Footer*/
+
+footer {
+    background-color: #242424;
+}

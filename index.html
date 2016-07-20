@@ -21,11 +21,6 @@
 
 
     <style>
-        html {
-            margin: 0;
-            background-color: gray;
-        }
-        
         body {
             background-color: ;
         }
@@ -38,11 +33,7 @@
         h6,
         p,
         * {
-            font-family: 'Poiret One';
-        }
-
-        h1 {
-            font-weight: 800;
+            /*            font-family: 'Poiret One';*/
         }
     </style>
 
@@ -99,66 +90,61 @@
 
 
     <!--====Portifolio=--->
-    <div class="row expanded ">
-        <div class="text-center jumbotron ">
-            <h1>Potifolio</h1>
-        </div>
-        <div class="row large-12 ">
-            <div class="column medium-12 large-10 large-centered ">
-                <div class="row large-centered ">
-                    <div class="column medium-6 large-4 ">
-                        <div class="grid ">
-                            <!--First figure-->
-                            <figure class="effect-lily columnx ">
-                                <img src="img/hori_zon.jpg " alt="img01 " />
-                                <figcaption>
-                                    <h2>Yusudi <span>Redone</span></h2>
-                                    <p>Lily likes to play with crayons and pencils</p>
-                                    <a href="http://victorwatotokumi.bitballoon.com/">View more</a>
-                                </figcaption>
+    <div id="portfolio">
+        <div class="row expanded section-space">
+            <h1 class="text-center" style="color: black;">Portfolio</h1>
+            <div class="row large-12">
+                <div class="column medium-12 large-10 large-centered ">
+                    <div class="row large-centered">
+                        <div class="column medium-6 large-4 ">
+                            <div class="grid ">
+                                <!--First figure-->
+                                <figure class="effect-lily columnx ">
+                                    <img src="img/hori_zon.jpg " alt="img01 " />
+                                    <figcaption>
+                                        <h2>Yusudi <span>Redone</span></h2>
+                                        <p>Lily likes to play with crayons and pencils</p>
+                                        <a href="http://victorwatotokumi.bitballoon.com/">View more</a>
+                                    </figcaption>
 
-                            </figure>
+                                </figure>
 
+                            </div>
                         </div>
-                    </div>
-                    <!-- another column-->
-                    <div class="column medium-6 large-4 ">
-                        <div class="grid ">
-                            <!--First figure-->
-                            <figure class="effect-lily columnx ">
-                                <img src="img/hori_zon.jpg " alt="img01 " />
-                                <figcaption>
-                                    <h2>Hakuna <span>Matata</span></h2>
-                                    <p>Lily likes to play with crayons and pencils</p>
-                                    <a href="http://victorhakunamatata.bitballoon.com/">View more</a>
-                                </figcaption>
-                            </figure>
+                        <!-- another column-->
+                        <div class="column medium-6 large-4 ">
+                            <div class="grid ">
+                                <!--First figure-->
+                                <figure class="effect-lily columnx ">
+                                    <img src="img/hori_zon.jpg " alt="img01 " />
+                                    <figcaption>
+                                        <h2>Hakuna <span>Matata</span></h2>
+                                        <p>Lily likes to play with crayons and pencils</p>
+                                        <a href="http://victorhakunamatata.bitballoon.com/">View more</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
                         </div>
-                    </div>
-                    <!-- another column-->
-                    <div class="column medium-6 large-4 ">
-                        <div class="grid">
-                            <!--First figure-->
-                            <figure class="effect-lily columnx ">
-                                <img src="img/hori_zon.jpg " alt="img01 " />
-                                <figcaption>
-                                    <h2>Watoto <span>Kumi</span></h2>
-                                    <p>Lily likes to play with crayons and pencils</p>
-                                    <a href="http://victorwatotokumi.bitballoon.com/">View more</a>
-                                </figcaption>
-                            </figure>
+                        <!-- another column-->
+                        <div class="column medium-6 large-4 ">
+                            <div class="grid">
+                                <!--First figure-->
+                                <figure class="effect-lily columnx ">
+                                    <img src="img/hori_zon.jpg " alt="img01 " />
+                                    <figcaption>
+                                        <h2>Watoto <span>Kumi</span></h2>
+                                        <p>Lily likes to play with crayons and pencils</p>
+                                        <a href="http://victorwatotokumi.bitballoon.com/">View more</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
                         </div>
+                        <!-- another column-->
                     </div>
-                    <!-- another column-->
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
 
 
     <!--====Begin second part here-->
@@ -214,38 +200,40 @@
 -->
     <!---======Begin form here=====---->
 
-    <div class="row ">
-        <div class="columns small-12 medium-8 large-6 small-centered large-centered ">
-            <h1 style="font-weight:700;">Talk to me</h1>
-            <form action="https://formspree.io/victsomie@yahoo.com " method="POST ">
-                <div class="medium-12 columns ">
-                    <label>
-                        <h1>Your Name</h1>
-                        <input type="text " name="name " placeholder="What 's your name">
-                    </label>
-                </div>
-                <div class="medium-12 columns">
-                    <label>
-                        <h1>E-mail</h1>
-                        <input type="text" name="email" placeholder="Let me know your mail">
-                    </label>
-                </div>
+    <div id="contact">
+        <div class="row">
+            <div class="columns small-12 medium-8 large-6 small-centered large-centered section-space">
+                <h1 style="font-weight:700;">Talk to me</h1>
+                <form action="https://formspree.io/victsomie@yahoo.com " method="POST ">
+                    <div class="medium-12 columns ">
+                        <label>
+                            <h1>Your Name</h1>
+                            <input type="text " name="name " placeholder="What 's your name">
+                        </label>
+                    </div>
+                    <div class="medium-12 columns">
+                        <label>
+                            <h1>E-mail</h1>
+                            <input type="text" name="email" placeholder="Let me know your mail">
+                        </label>
+                    </div>
 
-                <div class="medium-12 columns">
-                    <label>
-                        <h1>Leave comments</h1>
-                        <textarea placeholder="Tell me something" name="comments" rows="3"></textarea>
-                    </label>
+                    <div class="medium-12 columns">
+                        <label>
+                            <h1>Leave comments</h1>
+                            <textarea placeholder="Tell me something" name="comments" rows="3"></textarea>
+                        </label>
 
-                </div>
+                    </div>
 
-                <input type="submit" value="Send" class="success button">
+                    <input type="submit" value="Send" class="success button">
 
-                <button class="close-button" data-close aria-label="Close reveal" type="button">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                    <button class="close-button" data-close aria-label="Close reveal" type="button">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
 
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -257,12 +245,12 @@
 
 
 
-    <div class="demo-gap">
-        <p class="text-center">
+    <footer class="demo-gap" id="footer">
+        <h2 class="text-center">
             Copyright © 2016
-        </p>
+        </h2>
 
-    </div>
+    </footer>
 
     <!---JQUERY and typed.js -->
     <!--
