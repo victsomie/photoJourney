@@ -12,8 +12,12 @@ $(window).scroll(function () {
 $('.mobile-toggle').click(function () {
     if ($('.main_h').hasClass('open-nav')) {
         $('.main_h').removeClass('open-nav');
+        
+          $('.main_h div>a').removeClass('logoOut'); // === Modified by victor. Removes the logo ===
     } else {
         $('.main_h').addClass('open-nav');
+        
+         $('.main_h div>a').addClass('logoOut'); // === Modified by victor. Removes the logo ===
     }
 });
 
@@ -21,8 +25,18 @@ $('.main_h li a').click(function () {
     if ($('.main_h').hasClass('open-nav')) {
         $('.navigation').removeClass('open-nav');
         $('.main_h').removeClass('open-nav');
+        
+        $('.main_h div>a').removeClass('logoOut'); // === Modified by victor. Adds backthe logo ===
+    }
+    
+    if($('.main_h div>a').hasClass('logoOut')){
+        
     }
 });
+
+// ===== VICTORS MODIFICATION =============
+
+
 
 // navigation scroll lijepo radi materem
 //$('nav a').click(function(event) {

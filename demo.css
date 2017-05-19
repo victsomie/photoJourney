@@ -31,14 +31,59 @@ body {
     padding: 5% 0;
 }
 
+
+/*=============== TYPOGRAPHY  ===============*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+* {
+    font-family: 'Poiret One';
+    font-size: 1.09em;
+}
+@media screen and (min-width: 40em) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    * {
+        font-family: 'Poiret One';
+        font-size: 1.04em;
+    }
+}
+@media screen and (min-width: 64em) {            
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    * {
+        font-family: 'Poiret One';
+        font-size: 1.13em;
+    }
+}
+        
+
 h1 {
-    font-size: 50px;
+/*    font-size: 50px;*/
     /*    font-family: 'Lato';*/
 }
 
 h2 {
-    font-size: 30px;
+/*    font-size: 30px;*/
 }
+
+
+
 
 a,
 a:visited,
@@ -55,9 +100,9 @@ a:focus {
 a {
     color: white;
     text-decoration: none;
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
     padding: 10px;
-    font-size: 26px;
+/*    font-size: 26px;*/
 }
 
 a:hover {
@@ -117,7 +162,7 @@ a:hover {
 }
 
 .stick_y {
-    background-color: rgba(156, 139, 109, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     opacity: 1;
     top: 0px;
     border-bottom: 1px solid gainsboro;
@@ -134,6 +179,13 @@ a:hover {
     line-height: 1;
     margin-bottom: 10px;
 }
+/* This class will help hide the logo above
+  It will we added by code on pressing the menu toggle
+
+*/
+.logoOut {
+    display: none;
+}
 
 @media only screen and (max-width: 766px) {
     .logo {
@@ -143,12 +195,12 @@ a:hover {
 
 nav {
     float: right;
-    width: 80%;
+/*    width: 80%;*/
 }
 
 @media only screen and (max-width: 766px) {
     nav {
-        width: 100%;
+/*        width: 100%;*/
     }
 }
 
@@ -171,7 +223,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin-left: 35px;
+    margin-left: 20px;
     line-height: 1.5;
 }
 
@@ -185,7 +237,7 @@ nav ul li {
 
 nav ul a {
     color: #888888;
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
     font-size: 12px;
 }
 
@@ -332,8 +384,12 @@ nav ul a {
     }
 }
 
-*/
-/*======Portifolio here*/
+
+/*====== PORTIFOLIO =========================*/
+
+
+/*-----Grid figure----------*/
+
 
 
 /* Individual effects */
@@ -347,11 +403,15 @@ nav ul a {
 .grid {
     overflow: hidden;
     margin: 0;
-    padding: 3em 0 0 0;
+/*    padding: 3em 0 0 0;*/
+    padding: 0.2em 0.2em;
     width: 100%;
+    
     list-style: none;
     text-align: center;
 }
+
+
 
 
 /* Common style */
@@ -421,6 +481,7 @@ nav ul a {
 .grid figure h1 {
     word-spacing: -0.15em;
     font-weight: 300;
+    font-weight: 900;
 }
 
 .grid figure h2 span {
@@ -460,7 +521,7 @@ figure.effect-lily figcaption {
 figure.effect-lily h1,
 figure.effect-lily p {
     -webkit-transform: translate3d(0, 10px, 0);
-    transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, -20px, 0);
 }
 
 figure.effect-lily h1 {
@@ -483,7 +544,21 @@ figure.effect-lily:hover img{
 figure.effect-lily:hover h1,
 figure.effect-lily:hover p {
     opacity: 1;
+    
 }
+figure.effect-lily:hover {
+    background: black;
+    opacity: 0.8;
+    border-radius: 10%;
+    transition: 0.35s;
+}
+figure.effect-lily {
+    opacity: 1;
+    border-radius: 0px;
+    transition: 0.95s;
+}
+
+
 
 figure.effect-lily:hover img,
 figure.effect-lily:hover h2,
@@ -499,6 +574,20 @@ figure.effect-lily:hover p {
     transition-duration: 0.35s;
 }
 
+/* Largest screens*/
+@media screen and (min-width: 69.5em) {
+    .grid figure {
+        width: 100%;
+    }
+    .grid figure figcaption {
+        font-size: 60%;
+    }
+    #portifolio {
+        padding: 0 12%;
+    }
+}
+
+/* Medium screen */
 @media screen and (max-width: 69.5em) {
     .grid figure {
         width: 100%;
@@ -508,38 +597,61 @@ figure.effect-lily:hover p {
     }
 }
 
+
+/* Smallest screens  */
 @media screen and (max-width: 41.5em) {
     .grid figure {
         width: 100%;
     }
+    .grid figure figcaption {
+        font-size: 100%;
+    }
 }
-
-
-/*-----Grid figure----------*/
 
 
 /*====Portifolio*/
 
-#portfolio {
-    background-color: white;
+#portifolio {
+    background-color: whitesmoke;
 }
+
+
+
+
+/*============== CONTACT FORM =========================*/
 
 #contact {
     background-color: #6D614C;
     text-align: center;
 }
+#contact h1{
+    color: white;
+    font-size: 1.3em;
+}
 
 #contact input {
     min-width: 100%;
-    border-radius: 10px;
-    height: 50px;
+    border-radius:1px;
+/*    height: 50px;*/
     text-align: center;
 }
 
 #contact textarea {
     min-width: 100%;
-    border-radius: 10px;
+    border-radius: 1px;
     text-align: center;
+}
+
+#contact .button{
+    background-color: black;
+    font-size: 0.6em;
+    padding: 2%;
+}
+#contact .button:hover{
+    background-color: navajowhite;
+    color: black;
+    font-size: 0.6em;
+    padding: 2%;
 }
 
 
